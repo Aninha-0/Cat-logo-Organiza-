@@ -1,0 +1,188 @@
+body {
+  margin: 0;
+  font-family: 'Comic Sans MS', sans-serif;
+  background-color: #5ce1e629; 
+  color: #333;
+}
+
+header {
+  align-items: center;
+  padding: 0.3px;
+  background-color: #fff;
+  color:#5ce1e651;
+   text-align: center;
+  }
+  
+  header img{
+align-items: center;
+ max-width: 350px; 
+ top: 40px;
+
+  }
+
+main {
+  padding: 20px;
+}
+
+.section {
+  margin-bottom: 30px;
+}
+
+h2 {
+  text-align: center;
+  color: #39605a;
+  margin-bottom: 40px;
+  font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+  font-size: 40px;
+}
+
+
+/* TEMAS */
+.tema-bloco {
+  margin-bottom: 40px;
+  text-align: center;
+}
+
+
+.tema-bloco h3 {
+  color: #000000; /* Roxo */
+  margin-bottom: 12px;
+  font-size: 1.3rem;
+  text-align: center;
+}
+
+
+/* Estrutura do carrossel */
+.carrossel {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  position: relative;
+  margin: 0 auto;
+}
+
+
+/* Área das imagens */
+.carrossel-imagens {
+  position: relative;
+  width: 650px;   /* largura do carrossel */
+  height: 350px;  /* altura do carrossel */
+  overflow: hidden;
+  border-radius: 13px;
+}
+
+
+/* Cada item do carrossel */
+.carrossel-imagens .item {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  text-align: center;
+  display: none; /* esconde todos por padrão */
+}
+
+
+.carrossel-imagens .item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+
+/* Só o ativo aparece */
+.carrossel-imagens .item.ativo {
+  display: block;
+}
+
+
+
+/* Texto abaixo da imagem */
+.carrossel-imagens .item p {
+  position: absolute;
+  bottom: 10px;   /* distância da parte inferior */
+  left: 50%;
+  transform: translateX(-50%);
+  background: rgba(255, 255, 255, 0.811); /* fundo semitransparente */
+  padding: 5px 10px;
+  border-radius: 6px;
+  font-size: 1rem;
+  color: #000;
+  font-family: Arial, Helvetica, sans-serif;
+
+}
+
+
+/* Botões de seta */
+.seta {
+  background: #538b82;
+  color: white;
+  border: none;
+  padding: 8px 12px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 1.2rem;
+  transition: background 0.3s ease;
+}
+
+
+.seta:hover {
+  background: #5ce1e6;
+}
+
+
+
+
+/*TAMANHO e PEDIDOS*/
+ .tamanho-list, .pedido-list {
+  display: flex;
+  justify-content: center;
+  gap: 16px;
+  flex-wrap: wrap;
+}
+
+.tema-card, .tamanho-card, .pedido-card {
+  
+  color: #000000;
+  padding: 30px 60px;
+  border-radius: 15px;
+  font-weight: bold;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  text-align: center;
+  background-color: #fff;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.cta {
+  text-align: center;
+  font-size: 1.1rem;
+  margin-top: 20px;
+  color: #333;
+  font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+}
+
+#btnInstagram {
+  display: block;
+  margin: 20px auto;
+  background: linear-gradient(135deg,#f58529,#dd2a7b,#8134af,#515bd4);
+  color: #fff;
+  border: none;
+  padding: 12px 20px;
+  border-radius: 12px;
+  font-weight: bold;
+  cursor: pointer;
+}
+#btnInstagram:hover {
+  opacity: 0.9;
+}
+
+footer {
+  text-align: center;
+  padding: 20px;
+  background-color: #8ae8d8;
+  color: black;
+  font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+}
